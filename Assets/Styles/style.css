@@ -1,0 +1,396 @@
+:root{
+    --primarycolor: rgb(140, 0, 255);
+    --primaryfont: cursive;
+    --secondaryfont:  Verdana, Geneva, Tahoma, sans-serif;
+    --defaultfont: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.logo small{
+    font-family: var(--secondaryfont);
+    font-size: 1.2rem;
+}
+
+.lo-sp{
+    color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    font-family: cursive;
+}
+
+.l-sp{
+    color: black;
+    font-size: 1.8rem;
+    font-family: cursive;
+}
+
+.nav-links a{
+    padding: 1rem;
+    font-family: var(--secondaryfont);
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover{
+    background-color: black;
+    color: white;
+    padding: 0.7rem;
+    transition: 0.5s ease-in;
+}
+
+.contact-us{
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 1px solid black;
+    border-radius: 0.9rem;
+    outline: none;
+}
+
+button a{
+    color: black;
+    font-family: var(--defaultfont);
+    text-decoration: none;
+}
+
+.bi-list,
+.bi-x{
+    display: none;
+}
+
+main{
+    margin: 0 1rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.write p{
+    font-size: 2.9rem;
+    font-weight: 600;
+    font-family: var(--defaultfont);
+}
+
+.cont{
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.gotAProject{
+    padding: 0.5rem 1.3rem;
+    background: black;
+    color: white;
+    border: none;
+    font-family: var(--defaultfont);
+    outline: none;
+}
+
+.letsTalk{
+    padding: 0.5rem 1.3rem;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    font-family: var(--defaultfont);
+    outline: none;
+}
+
+.profile-img img{
+    height: 20rem;
+}
+
+.about{
+    padding-top: 2.5rem;
+}
+
+.about h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(--defaultfont);
+    color: var(--primarycolor);
+    font-family: var(--primaryfont);
+    padding-bottom: 1rem;
+}
+
+.about p{
+    font-size: 1rem;
+    font-family: var(--secondaryfont);
+}
+
+.services{
+    margin-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.services h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primarycolor);
+    font-family: var(--primaryfont);
+    padding-bottom: 1rem;
+}
+
+.services p{
+    font-size: 1rem;
+    font-family: var(--secondaryfont);
+    padding-bottom: 1rem;
+    list-style: none;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.card-cont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 3rem;
+}
+
+.card{
+    box-shadow: hsl(0, 0%, 85%) 0 0 1.6rem;
+    padding: 0.8rem;
+}
+
+.card p{
+  font-family: var(--primaryfont);
+  color: var(--primarycolor);
+  font-size: 1.5rem;
+}
+
+.img-div img{
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+}
+
+.projects{
+  padding: 1rem;
+}
+
+.projects h3{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primarycolor);
+  font-family: var(--primaryfont);
+  padding-bottom: 1rem;
+}
+
+#contact{
+  padding: 1rem;
+}
+
+#contact h3{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primarycolor);
+  font-family: var(--primaryfont);
+  padding-bottom: 1rem;
+}
+
+.socials{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 0.7rem;
+  column-gap: 0.7rem;
+  align-items: center;
+}
+
+.socials a{
+  padding: 1rem;
+}
+
+.facebook{
+  box-shadow: hsl(0,0%,85%) 0 0 1.6rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.facebook p{
+  font-family: var(--primaryfont);
+  color: var(--primarycolor);
+  margin-top: 1.6rem;
+}
+
+.whatsapp{
+  box-shadow: hsl(0,0%,85%) 0 0 1.6rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.whatsapp p{
+  font-family: var(--primaryfont);
+  color: var(--primarycolor);
+  margin-top: 1.6rem;
+}
+
+.twitter{
+  box-shadow: hsl(0,0%,85%) 0 0 1.6rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.twitter p{
+  font-family: var(--primaryfont);
+  color: var(--primarycolor);
+  margin-top: 1.6rem;
+}
+
+.github{
+  box-shadow: hsl(0,0%,85%) 0 0 1.6rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.github p{
+  font-family: var(--primaryfont);
+  color: var(--primarycolor);
+  margin-top: 1.6rem;
+}
+
+.email{
+  box-shadow: hsl(0,0%,85%) 0 0 1.6rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.email p{
+  font-family: var(--primaryfont);
+  color: var(--primarycolor);
+  margin-top: 1.6rem;
+}
+
+.phone{
+  box-shadow: hsl(0,0%,85%) 0 0 1.6rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.phone p{
+  font-family: var(--primaryfont);
+  color: var(--primarycolor);
+  margin-top: 1.6rem;
+}
+
+ 
+
+@media screen and (max-width:756px){
+  .nav-links{
+    display: none;
+  }
+  
+  .nav-links a{
+    color: white;
+    display: block;
+  }
+  .info{
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .profile-img img{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .write p{
+    inline-size: 21rem;
+    font-size: 1.9rem;
+  }
+  
+  .about{
+    margin-top: 2rem;
+    padding: 2.5rem 0.5;
+  }
+
+  #about{
+    font-family: var(--defaultfont);
+  }
+
+  #services{
+    font-family: var(--defaultfont);
+  }
+
+  #contact{
+    font-family: var(--defaultfont);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primarycolor);
+    padding-bottom: 1rem;
+}
+
+  .about p{
+    font-family: var(--secondaryfont);
+  }
+  
+  .card-cont{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 1rem;
+  }
+  
+  .card:hover{
+    transform: scale(0.9);
+  }
+  
+  .card p{
+    font-family: var(--defaultfont);
+    color: var(--primarycolor);
+    font-size: 1.5rem;
+  }
+
+  .facebook p{
+    font-family: var(--defaultfont);
+  }
+
+  .twitter p{
+    font-family: var(--defaultfont);
+  }
+
+  .whatsapp p{
+    font-family: var(--defaultfont);
+  }
+
+  .github p{
+    font-family: var(--defaultfont);
+  }
+
+  .email p{
+    font-family: var(--defaultfont);
+  }
+
+  .phone p{
+    font-family: var(--defaultfont);
+  }
+}
+
+@media screen and (min-width:756px) {
+  .socials{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 1.2rem;
+    column-gap: 1.2rem;
+  }
+
+}
+
+@media screen and (min-width:1024){
+  .write p{
+    inline-size: 40rem;
+  }
+}
